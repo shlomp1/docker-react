@@ -1,4 +1,3 @@
-version: "Sample Application"
 sudo: required 
 services: 
     - docker

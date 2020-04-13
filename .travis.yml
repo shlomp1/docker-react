@@ -1,0 +1,9 @@
+sudo: required 
+services: 
+    - docker
+    
+before_install:
+    - docker build -t shlomi/docker-react -f Dockerfile.dev .
+
+script:
+    - docker run shlomi/docker-react npm run test -- --covarage
